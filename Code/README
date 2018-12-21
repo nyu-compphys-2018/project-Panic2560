@@ -1,0 +1,15 @@
+RUN Geodesics.py
+----------------
+   ./runGeodesics.sh
+
+(Running time for Kerr background (RK4, N = 10000) ~ 20 min)
+
+RUN PenroseProcess.py
+---------------------
+   ./runPenroseProcess.sh
+
+(Running time ~ 1 h)
+
+INSTALL sympy
+-------------
+   pip install --user sympy
