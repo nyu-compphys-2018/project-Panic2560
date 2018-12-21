@@ -1,0 +1,65 @@
+\section{$D$-momentum Vs Conjugate momenta}
+\label{ApC}
+
+Here, we emphasize on the difference between the $D$-momentum $p_{\mu}$ appearing in General Relativity versus the conjugate momenta of a particle system described by a Lagrangian $L$. The $D$-momentum components for a massive particle are defined by,
+\be
+	p_{\mu} = mu_{\mu}
+\ee
+with $u_{\mu}$ the covariant $D$-velocity components. In terms of the coordinate velocity components, $p_{\mu}$ are written as,
+\be
+	p_{\mu} = m\frac{g_{\mu\nu}\upsilon^{\nu}}{\sqrt{-g_{\rho\sigma}\upsilon^{\rho}\upsilon^{\sigma}}} = m\frac{g_{\mu0}+g_{\mu i}\upsilon^{i}}{\sqrt{-\left(g_{00} + 2g_{0j}\upsilon^{i} + g_{jk}\upsilon^{j}\upsilon^{k}\right)}}
+\ee
+In the absence of any non-gravitational interactions, the $D$-momentum components are also the conjugate momenta,
+\be
+	P^{\mu} = \frac{\partial \mathcal{L}}{\partial u_{\mu}}
+\ee
+with $\mathcal{L}$ the Lagrangian describing the system. The gravitational part reads,
+\be
+	\mathcal{L}_{gr} = \frac{1}{2}mu^2 = \frac{1}{2}mg_{\mu\nu}u^{\mu}u^{\nu}
+\ee
+where we have adopted the notation for the norm of a $D$-vector $A^{\mu}$,
+\be
+	A^2 \equiv A_{\mu}A^{\mu} = g_{\mu\nu}A^{\mu}A^{\nu} = g^{\mu\nu}A_{\mu}A_{\nu}
+\ee
+
+If the Lagrangian contains additive new terms $\mathcal{L}_{int}$ associated with non-gravitational interactions, e.g. electromagnetic interactions,
+\be
+	\mathcal{L} = \mathcal{L}_{gr} + \mathcal{L}_{int}
+\ee
+then the conjugate momenta are,
+\be
+	P_{\mu} = p_{\mu} + \frac{\partial \mathcal{L}_{int}}{\partial u^{\mu}}
+\ee
+The conjugate momenta are useful observables from which ordinary constants of motion can be read from. For example, the energy is defined by $E \equiv -P_{0}$.
+
+The Euler-Lagrange equations then become the geodesics in the presence of non-gravitational forces,
+\be
+	\dot{u}^{\rho} + \Gamma^{\rho}_{\mu\nu}u^{\mu}u^{\nu} = a^{\rho}
+\ee
+with the non-gravitational $D$-acceleration $a^{\rho}$ constructed entirely from the interaction Lagrangian,
+\be\ba
+	a^{\rho} &= \frac{g^{\rho\mu}}{m}\left( \partial_{\mu} \mathcal{L}_{int} - \frac{d}{d\tau}\left( \frac{\partial \mathcal{L}_{int}}{\partial u^{\mu}} \right) \right) \\
+	&= \frac{g^{\rho\mu}}{m}\left( \partial_{\mu} \mathcal{L}_{int} - u^{\nu}\partial_{\nu}\left( \frac{\partial \mathcal{L}_{int}}{\partial u^{\mu}} \right) - \dot{u}^{\nu}\frac{\partial \mathcal{L}_{int}}{\partial u^{\mu}\partial u^{\nu}} \right)
+\ea\ee
+In the above expansion of the $D$-acceleration we made the very natural assumption that the interaction Lagrangian only depends on the spacetime position $x^{\mu}$ and the $D$-velocity $u^{\mu}$.
+
+\subsection{Example: Lorentz force}
+If the background metric describes an electrically charged mass distribution, e.g. a charged black hole, then a massive particle that also carries an electric charge $q$ will also experience a Lorentz force. This is inputted in the Lagrangian by the term,
+\be
+	\mathcal{L}_{int} = qA_{\mu}u^{\mu}
+\ee
+with $A_{\mu}$ the $x^{\mu}$-dependent covariant $D$-potential created by the charged mass configuration. We assume here that the background electromagnetic field created is stationary. Then the $D$-acceleration is,
+\be
+	a^{\rho} = \frac{q}{m}F^{\rho}_{\;\;\sigma}u^{\sigma}
+\ee
+with $F_{\mu\nu}$ the electromagnetic field strength tensor\footnote{The operation of anti-symmetrization of a rank-2 tensor $T_{\mu\nu}$ is,
+\be
+	T_{[\mu\nu]} \equiv \frac{1}{2}\left( T_{\mu\nu} - T_{\nu\mu} \right)
+\ee},
+\be
+	F_{\mu\nu} = 2\nabla_{[\mu}A_{\nu]} = 2\partial_{[\mu}A_{\nu]}
+\ee
+while the conjugate momenta read,
+\be
+	P_{\mu} = p_{\mu} + qA_{\mu}
+\ee

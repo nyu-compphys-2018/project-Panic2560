@@ -1,0 +1,20 @@
+\section{Comments and Discussion}
+\label{Sec4}
+
+\subsection{Part A: Solving Geodesics}
+As is obvious, the trajectories simulated are in agreement with the expected observations. For the first run, the trajectory is bounded and the energy ($E = -mu_{0}$) and angular momentum ($L = mu_{3}$) are conserved. The conservation laws also hold in the second in-falling trajectory but some expected instabilities seem to add up as the particle approaches more and more the event horizon at $r=2.0$. This just a computational artifact coming from the singular behavior of the metric at the event horizon. What is remarkable is that the particle slows down as it approaches the event horizon until it eventually stop at $r=2.0$; this is the expected behavior as seen by a stationary observer.
+
+\subsection{Part B: Simulating the Penrose Process}
+The results speak for themselves. Particle 3 does indeed have a negative energy, while particle 2 has sufficient energy to escape to infinity ($\epsilon_2>1$). The final terminal velocity will have only a radial non-zero component with value\footnote{Since energy is conserved, we simply set the asymptotic behavior of the metric $g_{\mu\nu} \rightarrow \eta_{\mu\nu}$,
+\be
+	\epsilon = u_{0} \rightarrow \frac{1}{\sqrt{1-\upsilon_{r\infty}}}
+\ee },
+\be
+	v_{2\infty} = \sqrt{1-\frac{1}{\epsilon_2^2}} = 0.687015393
+\ee
+
+The efficiency of the particular process is,
+\be
+	\eta = \frac{E_2}{E_1} = \mu_2\frac{\epsilon_2}{\epsilon_1} = 102.15 \%
+\ee
+In other words, particle 2 has gained $2.15 \%$ more energy than the initial parent particle!

@@ -1,0 +1,37 @@
+\section{Introduction}
+\label{Sec1}
+
+We aim to investigate the geodesic equations for the motion of a massive particle in the presence of a background gravitational field. The dimensionality of the spacetime itself is left as an input parameter along with the metric tensor. For a formal introduction to General Relativity, we recommend the reader to be advised from \cite{WeinbergGR} or \cite{GR_Carroll}.
+
+The geodesic equations are in general,
+\be
+	\ddot{x}^{\rho} + \Gamma^{\rho}_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu} = 0
+\ee
+where, ``dots'' represent derivatives with respect to the affine parameter $\lambda$, e.g. $\dot{x}^{\mu} \equiv \frac{dx^{\mu}}{d\lambda}$, and $\Gamma^{\rho}_{\mu\nu}$ are the Christoffel symbols whose components in a coordinate basis are obtained by first derivatives of the metric tensor,
+\be\label{Christoffel}
+	\Gamma^{\rho}_{\mu\nu} = \frac{1}{2}g^{\rho\sigma}\left( \partial_{\mu}g_{\sigma\nu} + \partial_{\nu}g_{\mu\sigma} - \partial_{\sigma}g_{\mu\nu} \right)
+\ee
+
+The geodesic equations in ($D=d+1$)-dimensions are a set of $D$ coupled second-order ordinary differential equations and can equivalently be written as $2D$ coupled first-order ordinary differential equations by introducing the $D$-velocities, $u^{\mu} \equiv \dot{x}^{\mu}$, allowing to write our problem as,
+\be\ba
+	\dot{x}^{\rho} &= u^{\rho} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\,:\;\; D\text{ equations} \\
+	\dot{u}^{\rho} &= -\Gamma^{\rho}_{\mu\nu}(x)u^{\mu}u^{\nu} \;\;:\;\; D\text{ equations}
+\ea\ee
+
+We are more interested to see how the massive particle propagates according to a stationary observer, that is, we set the affine parameter to the proper time $\tau$ and measure time using the coordinate time $x^0\equiv t$ by also introducing the coordinate velocity, $\upsilon^{\mu} \equiv \frac{dx^{\mu}}{dt} = (1,\vec{\upsilon})$. In terms of these, the equations of motion read (Appendix \ref{ApA}),
+\be\ba\label{EOM}
+	\frac{dx^{i}}{dt} &= \upsilon^{i} \\
+	\frac{d\upsilon^{i}}{dt} &= -\Gamma^{i}_{00} + \left(\Gamma^{0}_{00}\delta^{i}_{j} - 2\Gamma^{i}_{0j}\right)\upsilon^{j} + \left(2\Gamma^{0}_{0j}\delta^{i}_{k} - \Gamma^{i}_{jk}\right)\upsilon^{j}\upsilon^{k} + \Gamma^{0}_{jk}\upsilon^{i}\upsilon^{j}\upsilon^{k}
+\ea\ee
+
+If there are additional, non-gravitational, forces, e.g. electromagnetic interaction of a charged particle with a charged black hole, then the $D$-acceleration $a^{\mu}$ associated with non-gravitational interactions adds a new term in the equations of motion. The geodesics become,
+\be
+	\ddot{x}^{\rho} + \Gamma^{\rho}_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu} = a^{\rho}
+\ee
+and the subsequent coordinate equations of motion turn out to be,
+\be\ba\label{EOM_F}
+	\frac{dx^{i}}{dt} &= \upsilon^{i} \\
+	\frac{d\upsilon^{i}}{dt} &= -\bigg(\Gamma^{i}_{00} + a^{i}g_{00} \bigg) + \bigg(\left(\Gamma^{0}_{00} + a^{0} \right) \delta^{i}_{j} - 2\left(\Gamma^{i}_{0j}+a^{i}g_{0j}\right)\bigg)\upsilon^{j} + \\
+	&+ \bigg(2\left(\Gamma^{0}_{0j}+a^{0}g_{0j}\right)\delta^{i}_{k} - \left(\Gamma^{i}_{jk} + a^{i}g_{jk}\right)\bigg)\upsilon^{j}\upsilon^{k} + \bigg(\Gamma^{0}_{jk}+a^{0}g_{jk}\bigg)\upsilon^{i}\upsilon^{j}\upsilon^{k}
+\ea\ee
+We treat the extra $D$-acceleration $a^{\mu}$ as an additional input. We leave as a future development to take as an input the interaction Lagrangian rather than the $D$-acceleration (see Appendix \ref{ApC}). This would allow to directly construct both the $D$-acceleration $a^{\mu}$ \textit{and} the conjugate momenta $P^{\mu}$ associated with useful observables such as the energy and the angular momentum of the particle.

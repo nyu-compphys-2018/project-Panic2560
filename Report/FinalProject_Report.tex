@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[DIV=14,BCOR=0mm,headinclude=true,footinclude=false]{typearea}
+\usepackage{graphicx}
+\usepackage[bottom]{footmisc}
+\usepackage[titletoc]{appendix}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{braket}
+
+\newcommand{\code}[1]{\texttt{#1}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\ba{\begin{aligned}}
+\def\ea{\end{aligned}}
+\title{PHYS-GA-2000 Computational Physics \\ FINAL PROJECT \\ Simulating the Penrose Process }
+\author{Panagiotis Charalambous}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	We have written a \code{python} program solving geodesics with only inputs the coordinate system used along with the metric tensor components in that particular coordinate basis and non-gravitational forces. After demonstrating the code's correctness, we use it to simulate the Penrose process,observable in rotating black holes.
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{Sec1}
+\input{Sec2}
+\input{Sec3}
+\input{Sec4}
+\input{Sec5}
+\begin{appendices}
+	\noappendicestocpagenum
+	\input{ApA}
+	\input{ApB}
+	\input{ApC}
+\end{appendices}
+
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{FinalProject_References}
+\end{document}

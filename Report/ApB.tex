@@ -1,0 +1,26 @@
+\section{Coordinate velocitiy Vs $D$-velocity}
+\label{ApB}
+
+In this small appendix, we analyze the equivalence of giving the coordinate velocity components $\upsilon^{\mu}=(1,\vec{\upsilon})$ and giving the covariant\footnote{We consider the covariant $D$-velocity because it includes the usual conserved charges. For example, the energy is defined by $E=-mu_{0}$ and the angular momentum associated with rotations around the $x_{d}$-axes is given by $L=mu_{d}$ when using spherical coordinates.} $D$-velocity $u_{\mu}$. Although there are only $D-1$ independent components for the coordinate velocity, there is the additional parameter of the rest mass $m$ of the massive particle resulting in an equal number of spatial components of the coordinate velocity $\vec{\upsilon}$ and independent components of the $D$-velocity $u_{\mu}$. The rest mass can be immediately obtained from,
+\be
+	p^2 = -m^2
+\ee
+from which the condition $u^2 = -1$ for massive particles follows. The notation of the norm of a $D$-vector $A^{\mu}$ here is,
+\be
+	A^2 \equiv A_{\mu}A^{\mu} = g_{\mu\nu}A^{\mu}A^{\nu}
+\ee
+As a result we can determine the coordinate velocity $\vec{\upsilon}$ from $D-1$ components of the of the $D$-velocity $u_{\mu}$. To simplify things to situations that are very common, we assume that we know all the vectorial components of the coordinate velocity apart from the $i$'th component, that is, we know $\upsilon^{l}$, $l=1,\dots,i-1,i+1,\dots,D-1$ but not $\upsilon^{i}$. Then, given, one of the components of the $D$-velocity, say the $\mu$'th component, it can be shown that $\upsilon^{i}$ is given by,
+\be\ba
+	\upsilon^{i} &= \frac{-\beta_{i\mu} \pm \sqrt{\beta_{i\mu}^2 - \alpha_{i\mu}\gamma_{i\mu}}}{\alpha_{i\mu}} \\
+	\alpha_{i\mu} &= u_{\mu}^2 g_{ii} + g_{\mu i}^2 \\
+	\beta_{i\mu} &= u_{\mu}^2 \left(g_{0i} + g_{il}\upsilon^{l}\right) + g_{\mu i}\left(g_{\mu0} + g_{\mu l}\upsilon^{l}\right) \\
+	\gamma_{i\mu} &= u_{\mu}^2 \left(g_{00} + 2g_{0l}\upsilon^{l} + g_{lm} \upsilon^{m}\upsilon^{l}\right) + \left(g_{\mu0} + g_{\mu l}\upsilon^{l}\right)^2
+\ea\ee
+where there is no sum over the $mu$ and $i$ indices, while the summation over $m$ and $l$ runs from $1$ to $D-1$ excluding the value $i$. To decide the ``$+$'' or ``$-$'' sign, one just plugs $\upsilon^{i}$ in the expression for $u_{\mu}$ and checks which sign gives the right answer.
+
+For more practical applications of this procedure, we take the $\mu=i$. In this case, the results simplify and become,
+\be\ba\label{vi_ui}
+	\upsilon^{i} &= -\frac{g_{0i} + g_{il}\upsilon^{l}}{g_{ii}} + u_{i} \sqrt{\Delta_{i}} \\
+	\Delta_{i} &= \frac{\left(g_{0i} + g_{il}\upsilon^{l}\right)^2 - g_{ii}\left(g_{00} + 2g_{0l}\upsilon^{l} + g_{lm} \upsilon^{m}\upsilon^{l}\right)}{g_{ii}^2 \left( u_{i}^2 + g_{ii} \right) }
+\ea\ee
+This prescription will prove useful for determining the initial conditions for the Penrose process to be observed.

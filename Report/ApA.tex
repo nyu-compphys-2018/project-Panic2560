@@ -1,0 +1,27 @@
+\section{Derivation of equations of motion}
+\label{ApA}
+
+In this appendix, we derive the equations of motion \eqref{EOM_F} for a massive particle. To derive them, we start from the geodesics equations,
+\be
+	\ddot{x} + \Gamma^{\rho}_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu} = a^{\rho}
+\ee
+and write all the derivatives with respect to the proper time $\tau$ in term of derivatives with respect to the coordinate time $t$. For the $D$-velocity, we have,
+\be
+	\dot{x}^{\mu} = \dot{t}\upsilon^{\mu}
+\ee
+while, for the $D$-acceleration, we have,
+\be\ba
+	\ddot{x}^{\mu} &= \left(\dot{x}^{\mu}\right)\dot{} \\
+	&= \ddot{t}\upsilon^{\mu} + \dot{t}^2\frac{d\upsilon^{\mu}}{dt} \\
+	&= \dot{t}^2\left(\frac{d\upsilon^{\mu}}{dt} - \Gamma^{0}_{\mu\nu}\upsilon^{\mu}\upsilon^{\nu}\right) + a^{0}\upsilon^{\mu}
+\ea\ee
+where we used the $0$-component of the geodesics in the third line. Lastly, we use the normalization of the $D$-velocity for massive particles to express $\dot{t}$ in terms of the coordinate velocity,
+\be\ba
+	u_{\mu}u^{\mu} &= g_{\mu\nu}u^{\mu}u^{\nu} = \dot{t}^2g_{\mu\nu}\upsilon^{\mu}\upsilon^{\nu} = -1 \\
+	&\Rightarrow \dot{t} = \frac{1}{\sqrt{-g_{\mu\nu}\upsilon^{\mu}\upsilon^{\nu}}}
+\ea\ee
+and plug everything back to the geodesics to extract the equations of motion for the coordinate velocity,
+\be\ba
+	\frac{d\upsilon^{\rho}}{dt} &= \left(\Gamma^{0}_{\mu\nu}\upsilon^{\rho}-\Gamma^{\rho}_{\mu\nu}\right)\upsilon^{\mu}\upsilon^{\nu} + \frac{a^{\rho} - a^{0}}{\dot{t}^2} \\
+	&= \left(\Gamma^{0}_{\mu\nu}\upsilon^{\rho}-\Gamma^{\rho}_{\mu\nu} - g_{\mu\nu}(a^{\rho} - a^{0})\right)\upsilon^{\mu}\upsilon^{\nu} 
+\ea\ee
