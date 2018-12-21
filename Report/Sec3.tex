@@ -18,7 +18,7 @@ The parameters $R_{S}$, $a$ and $Q$ are the Schwarzschild radius, $R_{S}=2GM$, t
 \ee
 with only the outer horizon being physical, $r_{H} = r_{H}^{+}$.
 
-Apart from the event horizons, the rotating black hole possesses a unique region, called the ergoregion. This is the region within which a particle cannot stay still and is given by the set of those points satisfying $g_{tt}>0$. As a result. The ergoregion is bounded by two ergospheres $r_{E}^{\pm}$ ( $r_{E}^{-} < r < r_{E}^{+}$),
+Apart from the event horizons, the rotating black hole possesses a unique region, called the ergoregion. This is the region within which a particle cannot stay still and is given by the set of those points satisfying $g_{tt}>0$. As a result, the ergoregion is bounded by two ergospheres $r_{E}^{\pm}$ ( $r_{E}^{-} < r < r_{E}^{+}$),
 \be
 	r_{E}^{\pm} = \frac{R_{S}}{2}\left( 1 \pm \sqrt{1 - 4\frac{a^2\cos^2\theta + Q^2}{R_{S}^2}}  \right)
 \ee
@@ -29,7 +29,7 @@ In 1971, Roger Penrose and R. M. Floyd (\cite{Penrose1971}) theorized the extrac
 
 The condition for a negative energy is a $\phi$-component of the coordinate velocity smaller than a critical value,
 \be\label{NES_vd}
-	\upsilon^{\phi} < -\frac{g_{tt}}{g_{t\phi}} < 0
+	\upsilon^{\phi} < -\frac{g_{tt}}{g_{t\phi}}
 \ee
 This also sets an allowed range of the specific angular momentum $l\equiv\frac{L}{m}$,
 \be\label{NES_l}
@@ -46,7 +46,7 @@ where $\psi = g_{tt}g_{t\phi} - g_{t\phi}^2 = -\Delta\sin^2\theta <0 $ is the de
 		-g_{\phi t} & g_{tt}
 	\end{pmatrix}
 \ee
-From the specific angular momentum condition \eqref{NES_l}, it is obvious that the Penrose process can be produced only when $g_{tt}<0$, i.e. only within the ergoregion. The negative sign in \eqref{NES_l} also shows that the particle must have an opposite angular momentum ($L<0$) from the angular momentum of the black hole ($J>0$). Evidentially, a careful analysis of the process reveals that the extra energy particle 2 has gained comes from the rotational energy of the black hole; particle 3 is absorbed by the black hole lowering its total angular momentum to $J^{\prime} = J + L<J$.
+From the specific angular momentum condition \eqref{NES_l}, it is obvious that the Penrose process can be produced only when $g_{tt}>0$, i.e. only within the ergoregion. The negative sign in \eqref{NES_l} also shows that the particle must have an opposite angular momentum ($L<0$) from the angular momentum of the black hole ($J>0$), while the $\phi$-component of the coordinate velocity can still be positive. Evidentially, a careful analysis of the process reveals that the extra energy particle 2 has gained comes from the rotational energy of the black hole; particle 3 is absorbed by the black hole lowering its total angular momentum to $J^{\prime} = J + L<J$.
 
 \begin{figure}
 	\centering
@@ -82,7 +82,7 @@ Solving \eqref{ur_CONS}, we find that,
 \be\label{v2r}
 	\upsilon_{2}^{r} = \sqrt{-\frac{\lambda_1^2}{\lambda_1^2 g_{rr} + \mu_2^2}\left( g_{tt}+2g_{t\phi}\upsilon_{2}^{\phi} + g_{\phi\phi}(\upsilon_{2}^{\phi})^2 \right)}
 \ee
-where $\lambda_1 \equiv \dot{t}_1\upsilon_{1}^{r}$. We have chosen the ``$+$'' sign to ensure that particle heads out and is not in danger of getting too close to the event horizon before escaping to infinity. Plugging this expression into the expression of $l_2 \equiv u_{2\phi}$ and using \eqref{L_CONS}, we find that,
+where $\lambda_1 \equiv \dot{t}_1\upsilon_{1}^{r}$. We have chosen the ``$+$'' sign to ensure that particle 2 heads out and is not in danger of getting too close to the event horizon before escaping to infinity. Plugging this expression into the expression of $l_2 \equiv u_{2\phi}$ and using \eqref{L_CONS}, we find that,
 \be
 	\upsilon_{2}^{\phi} = g_{tt} \frac{-g_{t\phi} + \sqrt{-\psi}\sqrt{k(k+1)}}{g_{t\phi}^2 + kg_{tt}g_{\phi\phi}}
 \ee
@@ -104,10 +104,10 @@ given that the particle is outside the black hole ($r>r_{H}\Rightarrow g_{rr}>0$
 \ee
 The first case of $k\ge0$ is always satisfied unless $g_{rr}\le1$ but that would require the particle to be inside the black hole\footnote{Expanding $g_{rr}\le1$ from \eqref{Metric_Kerr-Newman}, we find that $r\le\frac{a^2+Q^2}{R_{S}}$. Physical black holes are not naked singularities, meaning that the event horizon exists, i.e. $\frac{a^2+Q^2}{R_{S}}\le\frac{R_{S}}{4}$. Consequently, if $g_{rr}\le1$, then $r\le\frac{R_{S}}{4}$ but $\frac{R_{S}}{4}<r_{H}$.}. On the other hand, $k\le-1$ can never be achieved because it yields the condition,
 \be
-	\mu_3^2 \le \frac{\mu_2^2}{-g_{tt}l_3^2} \frac{\lambda_1^2g_{rr} + \mu_2^2}{\lambda_1^2(1-g_{rr}) - \mu_2^2} < 0
+	\mu_3^2 \le \frac{\mu_2^2}{g_{tt}l_3^2} \frac{\lambda_1^2g_{rr} + \mu_2^2}{\lambda_1^2(1-g_{rr}) - \mu_2^2} < 0
 \ee
 
-The only true constraint on $\mu_2$ and $\mu_3$ is the requirement of particle 2 to reach infinity. This requires $\epsilon_2\ge1$ so,
+The only true constraint on $\mu_2$ and $\mu_3$ is the requirement of particle 2 reaching infinity. This requires $\epsilon_2\ge1$ so,
 \be
 	\boxed{\mu_2 \le \epsilon_1 - \mu_3 \epsilon_3}
 \ee

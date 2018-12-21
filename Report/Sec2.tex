@@ -1,4 +1,4 @@
-\section{Part A: Soling Geodesics}
+\section{Part A: Solving Geodesics}
 \label{Sec2}
 
 Using the python library \code{sympy}\footnote{This does not come directly by installing python using the \code{pip} command. To install it, simply type, \code{pip install --user sympy}.}, we evaluate the Christoffel symbols \eqref{Christoffel} and then use them to construct the force functions on the right-hand side of \eqref{EOM} for the coordinate velocities by also inputting the additional $D$-acceleration $a^{\mu}$.
@@ -61,6 +61,7 @@ From the covariant $D$-velocity, one can also read the energy and angular moment
 	E &\equiv -mu_{0} \\
 	L &\equiv mu_{D-1}
 \ea\ee
+but these expressions have additional terms when considering non-gravitational forces (see Appendix \ref{ApC}).
 
 \subsection{Schwarzschild Metric}
 As a first test, we solve the geodesics for motion around a Schwarzschild black hole whose geometry is,
